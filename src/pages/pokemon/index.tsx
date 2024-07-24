@@ -31,7 +31,7 @@ const Pokemon: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">My Caught Pokemons</h1>
+      <h1 className="text-2xl font-bold mb-4 font-mono">My Caught Pokemons</h1>
       {caughtPokemons.length === 0 ? (
         <p className="font-mono">You haven't caught any Pokemon yet.</p>
       ) : (
