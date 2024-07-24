@@ -88,21 +88,19 @@ const CatchPokemon: React.FC<CatchPokemonProps> = ({ pokemon }) => {
               placeholder="Enter nickname"
               className="border p-2 rounded font-mono text-black"
             />
-          </div>
-          <div>
-            <button
-              onClick={handleRelease}
-              className="mt-2 px-4 py-2 bg-red-600 text-white rounded font-mono "
-            >
-              RELEASE
-            </button>
             <button
               onClick={handleSubmit}
-              className="px-4 py-2 bg-orange-600 text-white rounded ml-6 font-mono"
+              className="px-4 py-2 bg-orange-600 text-white rounded ml-2 font-mono"
             >
               SUBMIT
             </button>
           </div>
+          <button
+            onClick={handleRelease}
+            className="mt-2 px-4 py-2 bg-red-600 text-white rounded font-mono"
+          >
+            RELEASE
+          </button>
         </div>
       ) : (
         <button
